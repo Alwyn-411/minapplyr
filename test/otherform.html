@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Advanced Job Application Test</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Career Application Portal</h1>
+
+<form id="applicationForm">
+
+<div class="section">
+<h2>Candidate Identity</h2>
+<a href="./index.html">Back</a> 
+
+<label for="candidate_name">Applicant Name</label>
+<input id="candidate_name" name="candidate_name">
+
+<label for="primary_email">Contact Email</label>
+<input id="primary_email" name="primary_email">
+
+<label for="mobile_number">Mobile Contact</label>
+<input id="mobile_number" name="mobile_number">
+
+<label for="home_address">Residential Address</label>
+<input id="home_address" name="home_address">
+
+<label for="location_city">Town/City</label>
+<input id="location_city" name="location_city">
+
+<label for="region_state">Region/State</label>
+<input id="region_state" name="region_state">
+
+<label for="nation">Nationality</label>
+<input id="nation" name="nation">
+</div>
+
+<div class="section">
+<h2>Professional Profile</h2>
+
+<label for="profile_linkedin">LinkedIn URL</label>
+<input id="profile_linkedin" name="profile_linkedin">
+
+<label for="profile_github">GitHub URL</label>
+<input id="profile_github" name="profile_github">
+
+<label for="personal_site">Personal Website</label>
+<input id="personal_site" name="personal_site">
+
+<label for="work_history">Employment History</label>
+<textarea id="work_history" name="work_history"></textarea>
+
+<label for="academic_background">Academic Background</label>
+<textarea id="academic_background" name="academic_background"></textarea>
+
+<label for="job_title">Current Job Title</label>
+<input id="job_title" name="job_title">
+
+<label for="employer">Current Employer</label>
+<input id="employer" name="employer">
+</div>
+
+<div class="section">
+<h2>Application Preferences</h2>
+
+<label for="expected_comp">Expected Compensation (Annual)</label>
+<input id="expected_comp" name="expected_comp">
+
+<label for="notice_duration">Notice Duration</label>
+<input id="notice_duration" name="notice_duration">
+
+<label for="cover_letter_text">Why do you want this job?</label>
+<textarea id="cover_letter_text" name="cover_letter_text"></textarea>
+
+<label for="relocate">Willing to relocate?</label>
+<select id="relocate" name="relocate">
+    <option value="">Select</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+
+<label for="experience_years">Total Experience (Years)</label>
+<input id="experience_years" name="experience_years">
+</div>
+
+<div class="section">
+<h2>Additional Information</h2>
+
+<label for="visa_status">Work Authorization / Visa Status</label>
+<input id="visa_status" name="visa_status">
+
+<label for="notice_reason">Reason for Notice Period</label>
+<textarea id="notice_reason" name="notice_reason"></textarea>
+</div>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</body>
+</html>
