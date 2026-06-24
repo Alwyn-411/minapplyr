@@ -7,6 +7,11 @@ MinAppyr is a lightweight browser extension that automatically saves form inputs
 
 It is designed for job applications, internship forms, and repetitive online forms.
 
+## Screenshots
+<div style="display:flex; gap:12px; overflow-x:auto; padding:8px 0;">
+  <img src="screenshots/1.png" width="360" />
+  <img src="screenshots/2.png" width="360" />
+</div>
 
 ## Features
 
