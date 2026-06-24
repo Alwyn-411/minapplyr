@@ -1,28 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="popup.css" />
 </head>
-<body>
+<body class="minapplyr">
+  <div class="minapplyr__container">
 
-  <h3>Smart Form Filler</h3>
+  <header class="minapplyr__header">
+    <div>
+      <h1 class="minapplyr__title">MinApplyr</h1>
 
-  <textarea
-    id="profileData"
-    placeholder='{
-        "name": "John Doe",
-        "email": "john@example.com",
-        "phone": "+91...",
-        "linkedin": "https://linkedin.com/in/johndoe"
-    }'
-  ></textarea>
+      <p class="minapplyr__subtitle">
+        Save and autofill forms
+      </p>
+    </div>
+  </header>
 
-  <button id="saveBtn">Save Profile</button>
-  <button id="loadBtn">Load Saved Profile</button>
-  <button id="resetBtn">Reset Memory</button>
+    <section class="minapplyr__card">
+      <div class="minapplyr__row">
+        <div>
+          <div class="minapplyr__label">
+            Enable Extension
+          </div>
 
-  <div id="status"></div>
+          <div class="minapplyr__hint">
+            Allow MinApplyr to save and autofill forms
+          </div>
+        </div>
 
+        <label class="minapplyr-switch">
+          <input
+            id="toggleEnabled"
+            type="checkbox"
+          />
+          <span class="minapplyr-switch__slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="minapplyr__card">
+      <div class="minapplyr__section-title">
+        Quick Actions
+      </div>
+
+      <div class="minapplyr__actions">
+        <button
+          id="openStorage"
+          class="minapplyr-btn"
+        >
+          View Saved Data
+        </button>
+
+        <button
+          id="clearStorage"
+          class="minapplyr-btn minapplyr-btn--danger"
+        >
+          Clear Data
+        </button>
+      </div>
+    </section>
+
+    <section class="minapplyr__card">
+      <div class="minapplyr__section-title">
+        Don't Run on these Domains
+      </div>
+
+      <div class="minapplyr__row" style="gap:8px; margin-bottom:10px;">
+        <input
+          id="domainInput"
+          type="text"
+          placeholder="e.g. facebook.com"
+          style="flex:1; padding:8px; border-radius:8px; border:1px solid var(--minapplyr-border); background:transparent; color:inherit;"
+        />
+
+        <button
+          id="addDomainBtn"
+          class="minapplyr-btn"
+          style="flex:0"
+        >
+          Add
+        </button>
+      </div>
+
+      <ul id="blockedList" style="list-style:none; padding:0; margin:0; font-size:13px;"></ul>
+    </section>
+
+    <section class="minapplyr__card">
+      <div class="minapplyr__section-title">
+        How To Use
+      </div>
+
+      <ol class="minapplyr__steps">
+        <li>Fill and submit a form.</li>
+        <li>MinApplyr remembers the fields and values.</li>
+        <li>Right-click on any form field.</li>
+        <li>Select “Auto Fill Application”.</li>
+      </ol>
+    </section>
+
+    <div
+      id="status"
+      class="minapplyr__status"
+    ></div>
+
+  </div>
 
   <script src="popup.js"></script>
 </body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <title>MinApplyr Settings</title>
+</head>
+
+<body class="minapplyr-options">
+
+  <div class="minapplyr-options__container">
+
+    <section class="minapplyr-options__card">
+      <h4>General</h4>
+
+      <label class="minapplyr-options__row">
+        <span>Enable Extension</span>
+        <input type="checkbox" id="toggleEnabled" />
+      </label>
+    </section>
+
+    <section class="minapplyr-options__card">
+      <h4>Data</h4>
+
+      <div class="minapplyr-options__actions">
+        <button id="exportBtn">Export Data</button>
+        <button id="clearBtn" class="danger">Clear Data</button>
+      </div>
+
+      <p id="status"></p>
+    </section>
+
+    <section class="minapplyr-options__card">
+      <h4>Don't Run on these Domains</h4>
+
+      <div class="minapplyr-options__row">
+        <input id="domainInput" type="text" placeholder="e.g. facebook.com" />
+        <button id="addDomainBtn">Add</button>
+      </div>
+
+      <ul id="blockedList" class="minapplyr-options__list"></ul>
+    </section>
+
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
